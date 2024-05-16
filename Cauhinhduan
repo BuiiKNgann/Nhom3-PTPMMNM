@@ -1,0 +1,81 @@
+ Hướng dẫn cấu hình chạy dự án
+Đề tài: Website bán vật liệu xây dựng
+Chức năng đã làm được: 
+	Chức năng phân quyền người dùng: Admin, User
+	Chức năng đăng ký
+	Chức năng đăng nhập
+	Chức năng thanh toán
+	Chức năng thêm
+	Chức năng xóa
+	Chức năng sửa
+	Chức năng chi tiết
+	Chức năng tìm kiếm
+	Chức năng thêm giỏ hàng
+	Chức năng xóa giỏ hàng
+	Chức năng cập nhật giỏ hàng
+	Chức năng giao hàng
+	Chức năng danh mục sản phẩm
+	Chức năng lọc đơn hàng 
+Chưa làm được:
+	Lịch sử đơn hàng
+	Quên mật khẩu 
+	Cập nhật hồ sơ người dùng
+
+Yêu cầu: 
+PHP 8.1.10
+Composer version 2.7.2
+
+Bước 1:
+Tải mã nguồn và file database 
+Github:https://github.com/BuiiKNgann/Nhom3-PTPMMNM
+
+Bước 2: Tạo và Import database
+Tạo database :
+-	Đặt tên: laravel_vlxd
+-	Bộ ký tự: utf8mb4_unicode_ci
+Import dữ liệu từ file database: laravel_vlxd.sql
+
+Bước 3: 
+-	Mở thư mục dự án myWeb và mở chạy terminal: 
+-	Chạy lên composer update
+
+Bước 4: 
+-	Vào visual studio code và open folder dự án “myWeb”
+-	Tại file .env.exapmle đổi tên thành .env
+Cập nhật thông số nhưng sau: 
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=laravel_vlxd
+DB_USERNAME=root
+DB_PASSWORD=
+
+Sau đó mở teminal của dự án và gõ lệnh: php artisan key:generate
+Khi gõ lệnh xong cấu hình tại file .env sẽ như sau:
+
+APP_NAME=Laravel
+ APP_ENV=local 
+APP_KEY=base64:cp6J5aDQWw+iTFgyCvEANWqQMk/85A0lqdvt0QdistY= 
+APP_DEBUG=true 
+APP_URL=http://localhost
+
+Bước 5: Chạy project
+-	Mở terminal trong thư mục gốc của dự án.
+-	Gõ lệnh chạy server:  php artisan serve và nhận được địa chỉ: 127.0.0.1:8000
+
+Đường dẫn truy cập: 
+-	Giao diện trang chủ: 127.0.0.1:8000
+-	Giao diện danh mục: 127.0.0.1:8000/shop
+-	Giao diện đăng nhập admin: 127.0.0.1:8000/admin/login
+Email: admin@example.com 
+Password: admin
+-	Giao diện admin: 127.0.0.1:8000/admin/dashboard
+
+
+
+
+
+
+
+
+
